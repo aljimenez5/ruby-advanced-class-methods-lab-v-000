@@ -55,6 +55,7 @@ class Song
 
   def self.create_from_filename(filename)
     new_from_filename(filename)
+    binding.pry
   end
 
   def self.destroy_all
