@@ -47,7 +47,6 @@ class Song
     filename_arr.delete('mp3')
     name = filename_arr[1]
     artist_name = filename_arr[0]
-    binding.pry
     song = self.new
     song.name = name
     song.artist_name = artist_name
