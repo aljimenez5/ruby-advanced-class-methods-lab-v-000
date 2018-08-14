@@ -43,9 +43,9 @@ class Song
   end
 
   def self.new_from_filename(filename)
-    filename.split(/[-.]/).delete('mp3')
-    name = filename[1]
-    artist_name = filename[0]
+    filename_arr = filename.split(/[-.]/).delete('mp3')
+    name = filename_arr[1]
+    artist_name = filename_arr[0]
     binding.pry
     song = self.new
     song.name = name
