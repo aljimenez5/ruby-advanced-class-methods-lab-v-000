@@ -44,6 +44,9 @@ class Song
 
   def self.new_from_filename(filename)
     filename.split('-','.').delete('mp3')
+    song.name = filename[1]
+    song.artist_name = filename[0]
+    
 
   end
 
